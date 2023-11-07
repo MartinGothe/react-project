@@ -6,6 +6,7 @@ function App() {
   return (
     <>
     <h1>Component App</h1>
+    <h2>A</h2>
     <Productos />
     </>
   );
