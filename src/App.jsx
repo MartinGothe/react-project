@@ -1,16 +1,12 @@
-import styles from "./app.module.css";
-import Productos from "./components/Productos/Productos";
+import { Padre } from "./components/Padre/Padre";
+import { HookUseState } from "./components/HookUseState/HookUseState.jsx";
 
-function App() {
-
+export const App = () => {
   return (
     <>
-    <h1>Component App</h1>
-    <h2>A</h2>
-    <Productos />
+      <h1>Componente App</h1>
+      <Padre />
+      <HookUseState />
     </>
   );
-
-}
-
-export default App
+};
