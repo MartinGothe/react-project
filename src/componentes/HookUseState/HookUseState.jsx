@@ -1,4 +1,4 @@
-import { useState } from "react";
+/* import { useState } from "react";
 
 export const HookUseState = () => {
     const [count, setCount] = useState(0);
@@ -41,4 +41,4 @@ export const HookUseState = () => {
             <button onClick={deleteName}>Borrar nombre</button>
         </>
     );
-};
+}; */

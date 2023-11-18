@@ -1,12 +1,19 @@
-import { Padre } from "./components/Padre/Padre";
-import { HookUseState } from "./components/HookUseState/HookUseState.jsx";
+import Navbar from "./componentes/Navbar/Navbar";
+
+
+import ItemListContainer from "./componentes/ItemListContainer/itemListContainer";
+
+"Hola"
+
 
 export const App = () => {
   return (
     <>
-      <h1>Componente App</h1>
-      <Padre />
-      <HookUseState />
+      <Navbar/>
+
+      <ItemListContainer greeting={"Bienvenidos a RetroFutbol"}/>
+
     </>
   );
 };
+
