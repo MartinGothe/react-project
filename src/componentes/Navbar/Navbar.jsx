@@ -6,7 +6,7 @@ const Navbar = () => {
         <>
             <nav className={styles.nav}>
                 <div className={styles.logo}>
-                    <img className={styles.logo} src="/public/img/fotologo.jpg" />
+                    <img className={styles.logo} src="/assets/img/fotologoDiego.png" />
                     <p className={styles.titulo}>RetroFutbol</p>
                 </div>
 
