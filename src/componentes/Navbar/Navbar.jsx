@@ -1,9 +1,8 @@
-import CardWidget from "../CardWidget/CardWidget"
+import { Link } from "react-router-dom";
+import { CartWidget } from "../CardWidget/CardWidget";
 import styles from "./Navbar.module.css";
-
-const Navbar = () => {
-    return (
-        <>
+export const NavBar = () => {
+return (
             <nav className={styles.nav}>
                 <div className={styles.logo}>
                     <img className={styles.logo} src="/assets/img/fotologoDiego.png" />
@@ -11,20 +10,22 @@ const Navbar = () => {
                 </div>
 
                 <div>
-                    <button className= {styles.BotonNav} >Inicio </button>
-                    <button className= {styles.BotonNav} >Camisetas  </button>
-                    <button className= {styles.BotonNav} >Buzos </button>
-                    <button className= {styles.BotonNav} >Botines </button>
-                    <button className= {styles.BotonNav} >Contacto </button>
+                    <Link to="/">
+
+                        <button className={styles.BotonNav}>Inicio </button>
+                    </Link>
+                    <Link to="/category/camisetas">
+                        <button className={styles.BotonNav}>Camisetas  </button>
+                    </Link>
+
+                    <Link to="/category/botines">
+                        <button className={styles.BotonNav}>Botines </button>
+                    </Link>
+
+                    <Link to="/cart">
+                        <CartWidget />
+                    </Link>
                 </div>
-                <CardWidget />
             </nav>
-
-
-
-        </>
-
-    )
-}
-
-export default Navbar
+        );
+    };
